@@ -30,19 +30,19 @@ $mahasiswa = [
     [
         "Nama" => "Budi",
         "NIM" => "2101002",
-        "Nilai UTS" => "76",
+        "Nilai UTS" => "30",
         "Nilai UAS" => "79"
     ],
     [
         "Nama" => "Tono",
         "NIM" => "2101003",
-        "Nilai UTS" => "50",
-        "Nilai UAS" => "41"
+        "Nilai UTS" => "75",
+        "Nilai UAS" => "80"
     ],
     [
         "Nama" => "Jessica",
         "NIM" => "2101004",
-        "Nilai UTS" => "60",
+        "Nilai UTS" => "10",
         "Nilai UAS" => "75"
     ]
 ];
