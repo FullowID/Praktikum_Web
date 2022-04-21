@@ -102,9 +102,9 @@ foreach ($mahasiswa as $mhs) {
     foreach ($mhs as $value) {
         if (!is_array($value)) {
             if ($value == "Tidak Revisi")
-                echo "<td style='background-color: #ff0000;'>" . $value . "</td>";
-            else if ($value == "Revisi KRS")
                 echo "<td style='background-color: #00ff00;'>" . $value . "</td>";
+            else if ($value == "Revisi KRS")
+                echo "<td style='background-color: #ff0000;'>" . $value . "</td>";
             else
                 echo "<td>" . $value . "</td>";
         } else {
