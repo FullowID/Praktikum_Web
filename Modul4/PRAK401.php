@@ -42,9 +42,9 @@ function janganClear($temp)
 ?>
 
 <form method="POST">
-    Panjang <input type="number" name="panjang" <?php if (isset($_POST["nilai"]))  echo " value='" . $_POST['nilai'] . "'"; ?>> </input> <br>
-    Lebar <input type="number" name="lebar" <?php if (isset($_POST["nilai"]))  echo " value='" . $_POST['nilai'] . "'"; ?>> </input><br>
-    Nilai <input type="text" name="nilai" <?php JanganClear('nilai') ?>> </input><br>
+    Panjang <input type="number" name="panjang" <?php JanganClear('panjang'); ?>> </input> <br>
+    Lebar <input type="number" name="lebar" <?php JanganClear('lebar'); ?>> </input><br>
+    Nilai <input type="text" name="nilai" <?php JanganClear('nilai'); ?>> </input><br>
     <button type="submit">Cetak</button>
 </form>
 
@@ -61,16 +61,17 @@ if (!empty($nilaiArr)) {
     if (($lebar * $panjang) != count($nilaiArr)) {
         echo "Panjang nilai tidak sesuai dengan ukuran matriks";
     } else {
+        echo "<table>";
         for ($i = 0; $i < $lebar; $i++) {
-            echo "<table>";
+
             echo "<tr>";
             for ($j = 0; $j < $panjang; $j++) {
                 echo "<td>" . $nilaiArr[$n] . "</td>";
                 $n++;
             }
             echo "</tr>";
-            echo "</table>";
         }
+        echo "</table>";
     }
 }
 ?>
