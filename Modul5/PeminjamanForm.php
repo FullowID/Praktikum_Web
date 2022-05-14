@@ -38,42 +38,42 @@ if ($form == 'update') {
 
 <body>
 
-<?php if ($form == 'tambah') : ?>
-    <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
+    <?php if ($form == 'tambah') : ?>
+        <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Tambah Peminjaman</p>
 
-    <form method="post">
-        <div class="mb-1 p-4">
-        <label for="tgl_pinjam" class="form-label">Tambah Tanggal Pinjam</label>
-        <input type="date" class="form-control" name="tgl_pinjam" id="tgl_pinjam">
+            <form method="post">
+                <div class="mb-1 p-4">
+                    <label for="tgl_pinjam" class="form-label">Tambah Tanggal Pinjam</label>
+                    <input type="date" class="form-control" name="tgl_pinjam" id="tgl_pinjam">
 
-        <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
-        <input type="date" class="form-control" name="tgl_kembali" id="tgl_kembali">
-        <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
+                    <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
+                    <input type="date" class="form-control" name="tgl_kembali" id="tgl_kembali">
+                    <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
+                </div>
+            </form>
+            <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
         </div>
-    </form>
-    <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
-    </div>
 
-<?php elseif ($form == 'update') : ?>
-    <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
+    <?php elseif ($form == 'update') : ?>
+        <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Update Peminjaman</p>
 
-    <form method="post">
-        <div class="mb-1 p-4">
-        <label for="tgl_pinjam" class="form-label">Tanggal Pinjam</label>
-        <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_pinjam;
-                                    echo "$dataPeminjaman->tgl_pinjam" ?>" name="tgl_pinjam" id="tgl_pinjam">
+            <form method="post">
+                <div class="mb-1 p-4">
+                    <label for="tgl_pinjam" class="form-label">Tanggal Pinjam</label>
+                    <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_pinjam;
+                                                                    echo "$dataPeminjaman->tgl_pinjam" ?>" name="tgl_pinjam" id="tgl_pinjam">
 
-        <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
-        <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_kembali;
-                                    echo "$dataPeminjaman->tgl_kembali" ?>" name="tgl_kembali" id="tgl_kembali">
-        <button class="btn btn-success mt-2" name='update' type="submit">Update Peminjaman</button>
+                    <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
+                    <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_kembali;
+                                                                    echo "$dataPeminjaman->tgl_kembali" ?>" name="tgl_kembali" id="tgl_kembali">
+                    <button class="btn btn-success mt-2" name='update' type="submit">Update Peminjaman</button>
+                </div>
+            </form>
+            <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
         </div>
-    </form>
-    <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
-    </div>
-<?php endif; ?>
+    <?php endif; ?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
