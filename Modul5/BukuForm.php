@@ -30,42 +30,68 @@ if ($form == 'update') {
 
 ?>
 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Buku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+
 <?php if ($form == 'tambah') : ?>
-
+    <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
+            <p class="fs-2 p-4 mt-2">Form Tambah Buku</p>
     <form method="post">
-        <label for="judul_buku">Tambah Nama Buku</label>
-        <input type="text" name="judul_buku" id="judul_buku">
+        <div class="mb-1 p-4">
+        <label for="judul_buku" class="form-label">Tambah Nama Buku</label>
+        <input type="text" class="form-control" name="judul_buku" id="judul_buku">
 
-        <label for="penulis">Tambah Penulis</label>
-        <input type="text" name="penulis" id="penulis">
+        <label for="penulis" class="form-label">Tambah Penulis</label>
+        <input type="text" class="form-control" name="penulis" id="penulis">
 
-        <label for="penerbit">Tambah Penerbit</label>
-        <input type="text" name="penerbit" id="penerbit">
+        <label for="penerbit" class="form-label">Tambah Penerbit</label>
+        <input type="text" class="form-control" name="penerbit" id="penerbit">
 
-        <label for="tahun_terbit">Tambah Tahun Terbit</label>
-        <input type="text" name="tahun_terbit" id="tahun_terbit">
-        <button name='tambah' type="submit">Tambahkan Data</button>
+        <label for="tahun_terbit" class="form-label">Tambah Tahun Terbit</label>
+        <input type="text" class="form-control" name="tahun_terbit" id="tahun_terbit">
+        <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
+        </div>
     </form>
+    <a class="p-4" href='Buku.php'><button class="btn btn-danger text-white">Cancel</button></a>
+    </div>
 
 <?php elseif ($form == 'update') : ?>
+    <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
+            <p class="fs-2 p-4 mt-2">Form Update Buku</p>
     <form method="post">
 
-        <label for="judul_buku">Judul Buku</label>
-        <input type="text" value="<?php $dataBuku->judul_buku;
+        <div class="p-4">
+        <label for="judul_buku" class="form-label">Judul Buku</label>
+        <input type="text" class="form-control" value="<?php $dataBuku->judul_buku;
                                     echo "$dataBuku->judul_buku" ?>" name="judul_buku" id="judul_buku">
 
-        <label for="penulis">Penulis</label>
-        <input type="text" value="<?php $dataBuku->penulis;
+        <label for="penulis" class="form-label">Penulis</label>
+        <input type="text" class="form-control" value="<?php $dataBuku->penulis;
                                     echo "$dataBuku->penulis" ?>" name="penulis" id="penulis">
 
-        <label for="penerbit">Penerbit</label>
-        <input type="text" value="<?php $dataBuku->penerbit;
+        <label for="penerbit" class="form-label">Penerbit</label>
+        <input type="text" class="form-control" value="<?php $dataBuku->penerbit;
                                     echo "$dataBuku->penerbit" ?>" name="penerbit" id="penerbit">
                                     
-        <label for="tahun_terbit">Tahun Terbit</label>
-        <input type="text" value="<?php $dataBuku->tahun_terbit;
+        <label for="tahun_terbit" class="form-label">Tahun Terbit</label>
+        <input type="text" class="form-control" value="<?php $dataBuku->tahun_terbit;
                                     echo "$dataBuku->tahun_terbit" ?>" name="tahun_terbit" id="tahun_terbit">
-
-        <button name='update' type="submit">Update Buku</button>
+        <button class="btn btn-success mt-2" name='update' type="submit">Update Buku</button>
+        </div>
     </form>
+    <a class="p-4" href='Buku.php'><button class="btn btn-danger text-white">Cancel</button></a>
+    </div>
 <?php endif; ?>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
