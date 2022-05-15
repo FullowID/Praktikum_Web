@@ -42,25 +42,27 @@ if ($form == 'update') {
         <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Tambah Peminjaman</p>
 
-            <form method="post">
-                <div class="mb-1 p-4">
+            <div class="p-4">
+                <form class="mb-2" method="post">
+
                     <label for="tgl_pinjam" class="form-label">Tambah Tanggal Pinjam</label>
                     <input type="date" class="form-control" name="tgl_pinjam" id="tgl_pinjam">
 
                     <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
                     <input type="date" class="form-control" name="tgl_kembali" id="tgl_kembali">
                     <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
-                </div>
-            </form>
-            <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
+
+                </form>
+                <a href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
+            </div>
         </div>
 
     <?php elseif ($form == 'update') : ?>
         <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Update Peminjaman</p>
+            <div class="p-4">
+                <form class="mb-2" method="post">
 
-            <form method="post">
-                <div class="mb-1 p-4">
                     <label for="tgl_pinjam" class="form-label">Tanggal Pinjam</label>
                     <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_pinjam;
                                                                     echo "$dataPeminjaman->tgl_pinjam" ?>" name="tgl_pinjam" id="tgl_pinjam">
@@ -69,9 +71,10 @@ if ($form == 'update') {
                     <input type="date" class="form-control" value="<?php $dataPeminjaman->tgl_kembali;
                                                                     echo "$dataPeminjaman->tgl_kembali" ?>" name="tgl_kembali" id="tgl_kembali">
                     <button class="btn btn-success mt-2" name='update' type="submit">Update Peminjaman</button>
-                </div>
-            </form>
-            <a class="p-4" href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
+
+                </form>
+                <a href='Peminjaman.php'><button class="btn btn-danger text-white">Cancel</button></a>
+            </div>
         </div>
     <?php endif; ?>
 

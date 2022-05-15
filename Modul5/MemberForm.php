@@ -47,9 +47,9 @@ if ($form == 'update') {
     <?php if ($form == 'tambah') : ?>
         <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Tambah Member</p>
+            <div class="p-4">
+                <form class="mb-2" method="post">
 
-            <form method="post">
-                <div class="mb-1 p-4">
                     <label for="nama_member" class="form-label">Tambah Nama Member</label>
                     <input type="text" class="form-control" name="nama_member" id="nama_member">
 
@@ -65,17 +65,18 @@ if ($form == 'update') {
                     <label for="tgl_terakhir_bayar" class="form-label">Tanggal Terakhir Bayar</label>
                     <input type="date" class="form-control" name="tgl_terakhir_bayar" id="tgl_terakhir_bayar">
                     <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
-                </div>
-            </form>
-            <a class="p-4" href='Member.php'><button class="btn btn-danger text-white">Cancel</button></a>
+
+                </form>
+                <a href='Member.php'><button class="btn btn-danger text-white">Cancel</button></a>
+            </div>
         </div>
 
     <?php elseif ($form == 'update') : ?>
         <div class="container bg-secondary bg-opacity-50 mt-5 rounded">
             <p class="fs-2 p-4 mt-2">Form Update Member</p>
+            <div class="p-4">
+                <form class="mb-2" method="post">
 
-            <form method="post">
-                <div class="mb-1 p-4">
                     <label for="nama_member" class="form-label">Nama Member</label>
                     <input type="text" class="form-control" value="<?php $dataMember->nama_member;
                                                                     echo "$dataMember->nama_member" ?>" name="nama_member" id="nama_member">
@@ -96,9 +97,10 @@ if ($form == 'update') {
                     <input type="date" class="form-control" value="<?php $dataMember->tgl_terakhir_bayar;
                                                                     echo "$dataMember->tgl_terakhir_bayar" ?>" name="tgl_terakhir_bayar" id="tgl_terakhir_bayar">
                     <button class="btn btn-success mt-2" name='update' type="submit">Update Member</button>
-                </div>
-            </form>
-            <a class="p-4" href='Member.php'><button class="btn btn-danger text-white">Cancel</button></a>
+
+                </form>
+                <a href='Member.php'><button class="btn btn-danger text-white">Cancel</button></a>
+            </div>
         </div>
     <?php endif; ?>
 
