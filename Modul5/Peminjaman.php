@@ -45,7 +45,7 @@ require 'Koneksi.php';
                 <td><?= $row->tgl_pinjam; ?></td>
                 <td><?= $row->tgl_kembali; ?></td>
                 <td>
-                    <a href='PeminjamanForm.php?id_peminjaman=<?= $row->id_peminjaman ?>&form=update'><button class="btn btn-primary text-white">edit</button></a>
+                    <a href='PeminjamanForm.php?id_peminjaman=<?= $row->id_peminjaman ?>&form=update'><button class="btn btn-primary text-white">Edit</button></a>
                     <a onclick="return confirm('Yakin hapus data yang dipilih?')" href='PeminjamanForm.php?id_peminjaman=<?= $row->id_peminjaman ?>&form=delete'><button class="btn btn-danger text-white">Delete</button></a>
                 </td>
             </tr>

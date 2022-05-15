@@ -50,16 +50,16 @@ if ($form == 'update') {
             <div class="p-4">
                 <form class="mb-2" method="post">
 
-                    <label for="nama_member" class="form-label">Tambah Nama Member</label>
+                    <label for="nama_member" class="form-label">Nama Member</label>
                     <input type="text" class="form-control" name="nama_member" id="nama_member">
 
-                    <label for="nomor_member" class="form-label">Tambah Nomor Member</label>
+                    <label for="nomor_member" class="form-label">Nomor Member</label>
                     <input type="text" class="form-control" name="nomor_member" id="nomor_member">
 
-                    <label for="alamat" class="form-label">Tambah Alamat</label>
+                    <label for="alamat" class="form-label">Alamat</label>
                     <input type="text" class="form-control" name="alamat" id="alamat">
 
-                    <label for="tgl_mendaftar" class="form-label">Tambah Tanggal Mendaftar</label>
+                    <label for="tgl_mendaftar" class="form-label">Tanggal Mendaftar</label>
                     <input type="datetime-local" class="form-control" name="tgl_mendaftar" id="tgl_mendaftar">
 
                     <label for="tgl_terakhir_bayar" class="form-label">Tanggal Terakhir Bayar</label>

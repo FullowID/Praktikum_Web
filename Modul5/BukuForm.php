@@ -49,16 +49,16 @@ if ($form == 'update') {
             <div class="p-4">
                 <form class="mb-2" method="post">
 
-                    <label for="judul_buku" class="form-label">Tambah Nama Buku</label>
+                    <label for="judul_buku" class="form-label">Nama Buku</label>
                     <input type="text" class="form-control" name="judul_buku" id="judul_buku">
 
-                    <label for="penulis" class="form-label">Tambah Penulis</label>
+                    <label for="penulis" class="form-label">Penulis</label>
                     <input type="text" class="form-control" name="penulis" id="penulis">
 
-                    <label for="penerbit" class="form-label">Tambah Penerbit</label>
+                    <label for="penerbit" class="form-label">Penerbit</label>
                     <input type="text" class="form-control" name="penerbit" id="penerbit">
 
-                    <label for="tahun_terbit" class="form-label">Tambah Tahun Terbit</label>
+                    <label for="tahun_terbit" class="form-label">Tahun Terbit</label>
                     <input type="text" class="form-control" name="tahun_terbit" id="tahun_terbit">
                     <button class="btn btn-success mt-2" name='tambah' type="submit">Tambahkan Data</button>
 

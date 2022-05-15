@@ -45,7 +45,7 @@ if ($form == 'update') {
             <div class="p-4">
                 <form class="mb-2" method="post">
 
-                    <label for="tgl_pinjam" class="form-label">Tambah Tanggal Pinjam</label>
+                    <label for="tgl_pinjam" class="form-label">Tanggal Pinjam</label>
                     <input type="date" class="form-control" name="tgl_pinjam" id="tgl_pinjam">
 
                     <label for="tgl_kembali" class="form-label">Tanggal Kembali</label>
